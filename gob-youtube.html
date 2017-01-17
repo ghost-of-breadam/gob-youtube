@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`gob-youtube`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="gob-youtube">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'gob-youtube',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'gob-youtube',
+        },
+      },
+
+    });
+  </script>
+</dom-module>

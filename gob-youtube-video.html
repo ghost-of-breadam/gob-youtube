@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../gob-content/gob-content.html">
+<link rel="import" href="../google-youtube/google-youtube.html">
+<!--
+`gob-youtube`
+
+
+@demo demo/index.html
+-->
+
+<dom-module id="gob-youtube-video">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <gob-content align="center">
+      <google-youtube
+        video-id="[[id]]"
+        width="100%"
+        frameborder="0"
+        allowfullscreen>
+      </google-youtube>
+    </gob-content>
+
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'gob-youtube-video'
+    });
+  </script>
+</dom-module>
